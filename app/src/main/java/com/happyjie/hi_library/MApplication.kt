@@ -2,10 +2,7 @@ package com.happyjie.hi_library
 
 import android.app.Application
 import com.google.gson.Gson
-import com.happyjie.hilibrary.log.HiConsolePrinter
-import com.happyjie.hilibrary.log.HiLogConfig
-import com.happyjie.hilibrary.log.HiLogManager
-import com.happyjie.hilibrary.log.HiViewPrinter
+import com.happyjie.hilibrary.log.*
 
 class MApplication : Application() {
     override fun onCreate() {
@@ -21,6 +18,7 @@ class MApplication : Application() {
             override fun enable(): Boolean {
                 return true;
             }
-        },HiConsolePrinter());
+        },HiConsolePrinter(),
+        HiFilePrinter.getInstance(applicationContext.cacheDir.absolutePath,0));
     }
 }
