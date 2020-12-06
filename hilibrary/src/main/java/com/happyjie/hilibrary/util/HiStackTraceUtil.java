@@ -1,4 +1,4 @@
-package com.happyjie.hilibrary.log.util;
+package com.happyjie.hilibrary.util;
 
 
 public class HiStackTraceUtil {

@@ -2,7 +2,7 @@ package com.happyjie.hilibrary.log;
 
 import androidx.annotation.NonNull;
 
-import com.happyjie.hilibrary.log.util.HiStackTraceUtil;
+import com.happyjie.hilibrary.util.HiStackTraceUtil;
 
 import java.util.Arrays;
 import java.util.List;

@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.happyjie.hilibrary.log.util.HiDisplayUtil;
+import com.happyjie.hilibrary.util.HiDisplayUtil;
 
 public class HiViewPrinterProvider {
     private FrameLayout rootView;
