@@ -1,14 +1,18 @@
 package com.happyjie.hiui.tab.bottom;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -86,6 +90,15 @@ public class HiTabBottom extends RelativeLayout implements IHiTab<HiTabBottomInf
         }
     }
 
+    @ColorInt
+    private int getTextColor(Object color) {
+        if (color instanceof String) {
+            return Color.parseColor((String) color);
+        } else {
+            return (int) color;
+        }
+    }
+
 
     public HiTabBottomInfo<?> getTabInfo() {
         return tabInfo;
@@ -102,14 +115,28 @@ public class HiTabBottom extends RelativeLayout implements IHiTab<HiTabBottomInf
     public TextView getTabNameView() {
         return tabNameView;
     }
-
+    /**
+     * 改变某个tab的高度
+     *
+     * @param height
+     */
     @Override
     public void resetHeight(int height) {
-
+        ViewGroup.LayoutParams layoutParams = getLayoutParams();
+        layoutParams.height = height;
+        setLayoutParams(layoutParams);
+        getTabNameView().setVisibility(View.GONE);
     }
 
     @Override
     public void onTabSelectedChange(int index, @Nullable HiTabBottomInfo<?> prevInfo, @NonNull HiTabBottomInfo<?> nextInfo) {
-
+        if (prevInfo != tabInfo && nextInfo != tabInfo || prevInfo == nextInfo) {
+            return;
+        }
+        if (prevInfo == tabInfo) {
+            inflateInfo(false, false);
+        } else {
+            inflateInfo(true, false);
+        }
     }
 }
