@@ -14,7 +14,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="4dp"
         android:scaleType="centerInside"
-        android:visibility="gone" />
+        android:src="@drawable/test_small"
+        android:visibility="gone"
+        tools:visibility="visible" />
 
 
     <TextView
@@ -26,9 +28,10 @@
         android:layout_marginBottom="3dp"
         android:textColor="#666666"
         android:textSize="23dp"
-        tools:text="tv_icon"
         android:textStyle="bold"
-        android:visibility="gone" />
+        android:visibility="gone"
+        tools:text="tv_icon"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/tv_name"
@@ -38,8 +41,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
         android:includeFontPadding="false"
-        tools:text="tv_name"
         android:textColor="#999999"
-        android:textSize="10dp" />
+        android:textSize="10dp"
+        tools:text="tv_name" />
 
 </RelativeLayout>

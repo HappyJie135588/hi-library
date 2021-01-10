@@ -52,6 +52,10 @@ public class HiTabBottom extends RelativeLayout implements IHiTab<HiTabBottomInf
         inflateInfo(false,true);
     }
 
+    public HiTabBottomInfo getHiTabInfo() {
+        return tabInfo;
+    }
+
     private void inflateInfo(boolean selected, boolean init) {
         if(tabInfo.tabType== HiTabBottomInfo.TabType.ICON){
             if(init){

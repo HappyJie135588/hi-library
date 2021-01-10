@@ -30,6 +30,7 @@ public class HiViewPrinter implements HiLogPrinter {
 
         adapter = new LogAdapter(LayoutInflater.from(recyclerView.getContext()));
         recyclerView.setLayoutManager(new LinearLayoutManager(activity));
+        recyclerView.setAdapter(adapter);
         viewProvider = new HiViewPrinterProvider(rootView,recyclerView);
 
     }
