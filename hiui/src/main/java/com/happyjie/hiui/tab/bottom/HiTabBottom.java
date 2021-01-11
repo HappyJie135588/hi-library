@@ -82,9 +82,6 @@ public class HiTabBottom extends RelativeLayout implements IHiTab<HiTabBottomInf
             if (init) {
                 tabImageView.setVisibility(VISIBLE);
                 tabIconView.setVisibility(GONE);
-                if (!TextUtils.isEmpty(tabInfo.name)) {
-                    tabNameView.setText(tabInfo.name);
-                }
             }
             if (selected) {
                 tabImageView.setImageBitmap(tabInfo.selectedBitmap);
