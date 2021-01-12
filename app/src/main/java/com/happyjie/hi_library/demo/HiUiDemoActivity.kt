@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.happyjie.hi_library.R
 import com.happyjie.hi_library.demo.tab.HiTabBottomDemoActivity
+import com.happyjie.hi_library.demo.tab.HiTabTopDemoActivity
 import kotlinx.android.synthetic.main.activity_hi_ui_demo.*
 
 class HiUiDemoActivity : AppCompatActivity(), View.OnClickListener {
@@ -31,9 +32,9 @@ class HiUiDemoActivity : AppCompatActivity(), View.OnClickListener {
 //            R.id.tv_hi_banner -> {
 //                startActivity(Intent(this, HiBannerDemoActivity::class.java))
 //            }
-//            R.id.tv_hi_taptop -> {
-//                startActivity(Intent(this, HiTabTopDemoActivity::class.java))
-//            }
+            R.id.tv_hi_taptop -> {
+                startActivity(Intent(this, HiTabTopDemoActivity::class.java))
+            }
         }
     }
 }
