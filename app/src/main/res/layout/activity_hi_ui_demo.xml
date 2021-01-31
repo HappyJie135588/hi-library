@@ -19,16 +19,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_hi_refresh"
+        android:id="@+id/tv_hi_refresh_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="HiRefresh"
+        android:text="HiRefreshText"
         android:textColor="#0077cc"
         android:textSize="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_tab_bottom" />
+
+    <TextView
+        android:id="@+id/tv_hi_refresh_lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="HiRefreshLottie"
+        android:textColor="#0077cc"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_hi_refresh_text" />
 
     <TextView
         android:id="@+id/tv_hi_banner"
@@ -40,7 +52,7 @@
         android:textSize="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_hi_refresh" />
+        app:layout_constraintTop_toBottomOf="@id/tv_hi_refresh_lottie" />
 
 
     <TextView
