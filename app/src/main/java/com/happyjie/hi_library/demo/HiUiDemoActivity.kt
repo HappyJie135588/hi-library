@@ -35,9 +35,9 @@ class HiUiDemoActivity : AppCompatActivity(), View.OnClickListener {
             R.id.tv_hi_refresh_lottie -> {
                 startActivity(Intent(this, HiRefreshLottieActivity::class.java))
             }
-//            R.id.tv_hi_banner -> {
-//                startActivity(Intent(this, HiBannerDemoActivity::class.java))
-//            }
+            R.id.tv_hi_banner -> {
+                startActivity(Intent(this, HiBannerDemoActivity::class.java))
+            }
             R.id.tv_hi_taptop -> {
                 startActivity(Intent(this, HiTabTopDemoActivity::class.java))
             }
