@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.happyjie.hi_library.R
+import com.happyjie.hi_library.demo.banner.HiBannerDemoActivity
 import com.happyjie.hi_library.demo.refresh.HiRefreshLottieActivity
 import com.happyjie.hi_library.demo.refresh.HiRefreshTextActivity
 import com.happyjie.hi_library.demo.tab.HiTabBottomDemoActivity

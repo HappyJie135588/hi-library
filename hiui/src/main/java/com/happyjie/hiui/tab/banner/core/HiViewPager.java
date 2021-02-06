@@ -99,7 +99,7 @@ public class HiViewPager extends ViewPager {
         try {
             Field scrollerField = ViewPager.class.getDeclaredField("mScroller");
             scrollerField.setAccessible(true);
-            scrollerField.set(this, new HiBannerScroller(getContext(), duration));
+            scrollerField.set(this,new HiBannerScroller(getContext(),duration));
         } catch (Exception e) {
             e.printStackTrace();
         }
