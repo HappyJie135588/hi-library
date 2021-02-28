@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".demo.banner.HiBannerDemoActivity"/>
+        <activity android:name=".demo.HiManagerActivity"></activity>
+        <activity android:name=".demo.banner.HiBannerDemoActivity" />
         <activity android:name=".demo.refresh.HiRefreshTextActivity" />
         <activity android:name=".demo.refresh.HiRefreshLottieActivity" />
         <activity android:name=".demo.tab.HiTabTopDemoActivity" />
