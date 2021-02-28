@@ -5,38 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".demo.fragment.HiFragmentActivity">
 
     <TextView
-        android:id="@+id/tv_hilog"
+        android:id="@+id/tv_add"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="HiLog"
+        android:text="AddFragment"
         android:textColor="#0077cc"
         android:textSize="20dp" />
     <TextView
-        android:id="@+id/tv_hiui"
+        android:id="@+id/tv_view_pager2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="HiUi"
-        android:textColor="#0077cc"
-        android:textSize="20dp" />
-    <TextView
-        android:id="@+id/tv_manager"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:text="HiActivityManager"
-        android:textColor="#0077cc"
-        android:textSize="20dp" />
-    <TextView
-        android:id="@+id/tv_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:text="HiFragment"
+        android:text="ViewPager2"
         android:textColor="#0077cc"
         android:textSize="20dp" />
 

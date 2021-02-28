@@ -1,4 +1,4 @@
-package com.happyjie.hi_library.demo
+package com.happyjie.hi_library.demo.manager
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -4,13 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.happyjie.hi_library.demo.HiManagerActivity
+import com.happyjie.hi_library.demo.manager.HiManagerActivity
 import com.happyjie.hi_library.demo.HiUiDemoActivity
+import com.happyjie.hi_library.demo.fragment.HiFragmentActivity
 import com.happyjie.hi_library.demo.log.HiLogDemoActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         tv_hilog.setOnClickListener(this)
         tv_hiui.setOnClickListener(this)
         tv_manager.setOnClickListener(this)
+        tv_fragment.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -30,6 +31,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.tv_manager -> {
                 startActivity(Intent(this, HiManagerActivity::class.java))
+            }
+            R.id.tv_fragment -> {
+                startActivity(Intent(this, HiFragmentActivity::class.java))
             }
         }
     }

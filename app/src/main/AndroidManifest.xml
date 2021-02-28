@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".demo.HiManagerActivity"></activity>
+        <activity android:name=".demo.fragment.HiFragmentActivity"></activity>
+        <activity android:name=".demo.fragment.ViewPager2Activity" />
+        <activity android:name=".demo.fragment.AddFragmentActivity" />
+        <activity android:name=".demo.manager.HiManagerActivity" />
         <activity android:name=".demo.banner.HiBannerDemoActivity" />
         <activity android:name=".demo.refresh.HiRefreshTextActivity" />
         <activity android:name=".demo.refresh.HiRefreshLottieActivity" />
