@@ -1,6 +1,9 @@
 package com.happyjie.hi_library.demo.fragment
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +18,7 @@ class ThirdFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.e("fragment", "ThirdFragment--onCreate")
         arguments?.let {
         }
     }
@@ -25,6 +29,7 @@ class ThirdFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fragment_third, container, false)
+        Log.e("fragment", "ThirdFragment--onCreateView")
 
         initView()
         return mView
@@ -41,5 +46,20 @@ class ThirdFragment : Fragment() {
                 arguments = Bundle().apply {
                 }
             }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.e("fragment", "ThirdFragment--onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.e("fragment", "ThirdFragment--onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.e("fragment", "ThirdFragment--onPause")
     }
 }
